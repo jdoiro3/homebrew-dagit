@@ -5,7 +5,7 @@
 class Dagit < Formula
   desc "Live DAG visual of Git's internals"
   homepage "https://github.com/jdoiro3/dagit"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Dagit < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jdoiro3/dagit/releases/download/v0.3.1/dagit_Darwin_x86_64"
-      sha256 "6585cd0614cb5a7ff4cf633febfc8ce753e87a3d2ffa6eba75a2dfd5305a5540"
+      url "https://github.com/jdoiro3/dagit/releases/download/v0.4.0/dagit_Darwin_x86_64"
+      sha256 "137c66df19dc85fef21f82dc088074ea49a52328d89fbd198513f8dc5c79056e"
 
       def install
         bin.install "dagit_Darwin_x86_64" => "dagit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jdoiro3/dagit/releases/download/v0.3.1/dagit_Darwin_arm64"
-      sha256 "7cb4d7544c58820cd380d95b4b9c8b563df1a502c7c9279b80a3053d52aac216"
+      url "https://github.com/jdoiro3/dagit/releases/download/v0.4.0/dagit_Darwin_arm64"
+      sha256 "fa4266c63a81e818a1f063f293c7d7bea1e5034b14c9415ac65c8fee6c3b8b1b"
 
       def install
         bin.install "dagit_Darwin_arm64" => "dagit"
@@ -33,8 +33,8 @@ class Dagit < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jdoiro3/dagit/releases/download/v0.3.1/dagit_Linux_x86_64"
-        sha256 "a8e9ba3a5774cb0a0c84c88cdcd14f2b4dc79685a1954f4903ea6db41bde0e2a"
+        url "https://github.com/jdoiro3/dagit/releases/download/v0.4.0/dagit_Linux_x86_64"
+        sha256 "5370dc2b4554ca4c2d889551881884e040e410abd28161ea60433e9ea09724a9"
 
         def install
           bin.install "dagit_Linux_x86_64" => "dagit"
@@ -43,8 +43,8 @@ class Dagit < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jdoiro3/dagit/releases/download/v0.3.1/dagit_Linux_arm64"
-        sha256 "f5b4d50fbf33dd556c8d7cd4465d9856a4a82e06c0760ba1cf742507aa743180"
+        url "https://github.com/jdoiro3/dagit/releases/download/v0.4.0/dagit_Linux_arm64"
+        sha256 "c3ce7f1963a62d5713edb84d17315414c0fdea0e5399bf9cdd01d05be42d5975"
 
         def install
           bin.install "dagit_Linux_arm64" => "dagit"
